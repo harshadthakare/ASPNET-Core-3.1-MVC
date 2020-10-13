@@ -8,9 +8,9 @@ namespace MyBookStoreApp.Controllers
 {
     public class HomeController:Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            return "My First Controller";
+            return View();
         }
     }
 }
