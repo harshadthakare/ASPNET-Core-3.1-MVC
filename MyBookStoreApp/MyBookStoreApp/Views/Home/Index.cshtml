@@ -9,12 +9,19 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="~/css/StyleSheet.css" rel="stylesheet" />
 </head>
-<body>
+<body class="container">
     <img src="~/images/ht_logo.png" class="Logo" alt="Logo" />
-    <img src="~/MystaticFilesTest/logo_tetra_pak_AOB_icon.ico" alt="dummy"/>
-    <h1>Welcome to Bookstore application</h1>
-    <p>This is a Home page of BookStore App</p>
+    <input type="button" value="Click Me" class="btn-danger" />
+    <h1 class="h1">Welcome to Bookstore application</h1>
+    <p class="p-1">This is a Home page of BookStore App</p>
 </body>
+<script src="~/lib/jquery/jquery.js"></script>
 </html>
+<script>
+    $(document).ready(function () {
+        alert("Page Loaded");
+    });
+</script>

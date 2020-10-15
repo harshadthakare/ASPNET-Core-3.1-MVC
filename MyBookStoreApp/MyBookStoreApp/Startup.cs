@@ -31,11 +31,6 @@ namespace MyBookStoreApp
 
             app.UseStaticFiles();
 
-            app.UseStaticFiles(new StaticFileOptions() {
-               FileProvider=new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"MystaticFilesTest")),
-               RequestPath= "/MystaticFilesTest"
-            });
-
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
